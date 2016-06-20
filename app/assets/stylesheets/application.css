@@ -25,6 +25,11 @@
   padding-bottom: 40px;
 }
 
+#clear-search {
+  float: right;
+  width: 97px;
+}
+
 li {
   padding: 10px;
   border-bottom: 1px solid grey;
@@ -51,5 +56,9 @@ p {
 
   label {
     display: block;
+  }
+
+  #clear-search {
+    float: left;
   }
 }

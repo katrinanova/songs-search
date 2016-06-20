@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  id: 1
+  title: "Song Title"
   album_id: 1
 
 two:
-  title: MyString
+  id: 2
+  title: "Song Title2"
   album_id: 1

@@ -1,7 +1,7 @@
 <% if @records_array.empty? %>
   <h3>Sorry, no songs match those parametrs</h3>
 <% else %>
-  <ul>
+  <ul id="ul-no-style">
   <% @records_array.each do |song_object| %>
     <li><strong>Artist:</strong> <p><%= song_object["artist"] %></p> <strong>Album:</strong> <p><%= song_object["album"] %></p> <strong>Song:</strong> <p><%= song_object["song"] %></p></li>
   <% end %>

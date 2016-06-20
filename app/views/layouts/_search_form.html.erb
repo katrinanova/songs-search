@@ -4,17 +4,17 @@
   <form action="/search_results">
     <label>
       Artist Name:
-      <input type="text" name="artist_name" value="">
+      <input type="text" name="artist_name" value="<%= @artist%>">
     </label>
 
     <label>
       Album Title:
-      <input type="text" name="album_title" value="">
+      <input type="text" name="album_title" value="<%= @album%>">
     </label>
 
     <label>
       Song Title:
-      <input type="text" name="song_title" value="">
+      <input type="text" name="song_title" value="<%= @song%>">
     </label>
 
     <input type="submit" value="Search">

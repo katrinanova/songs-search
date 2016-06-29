@@ -1,9 +1,9 @@
-<% if @records_array.empty? %>
+<% if @search.results.empty? %>
   <h3>Sorry, no songs match those parameters</h3>
 <% else %>
   <ul id="ul-no-style">
-  <% @records_array.each do |song_object| %>
-    <li><strong>Artist:</strong> <p><%= song_object["artist"] %></p> <strong>Album:</strong> <p><%= song_object["album"] %></p> <strong>Song:</strong> <p><%= song_object["song"] %></p></li>
+  <% @search.results.each do |song| %>
+    <li><strong>Artist:</strong> <p><%= song.album.artist.name %></p> <strong>Album:</strong> <p><%= song.album.title %></p> <strong>Song:</strong> <p><%= song.title %></p></li>
   <% end %>
   </ul>
 <% end %>

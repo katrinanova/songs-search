@@ -1,9 +1,0 @@
-<% if @search.results.empty? %>
-  <h3>Sorry, no songs match those parameters</h3>
-<% else %>
-  <ul id="ul-no-style">
-  <% @search.results.each do |song| %>
-    <li><strong>Artist:</strong> <p><%= song.album.artist.name %></p> <strong>Album:</strong> <p><%= song.album.title %></p> <strong>Song:</strong> <p><%= song.title %></p></li>
-  <% end %>
-  </ul>
-<% end %>
